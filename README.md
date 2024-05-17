@@ -1,7 +1,7 @@
 # CS6700: Reinforcement Learning
-PA3 EE21S048 NS24Z111
-April 20, 2024
-Assignment 3
+PA3 EE21S048 NS24Z111 \\
+April 20, 2024 \\
+Assignment 3 \\
 
 Team Members:
 * Matcha Naga Gayathri (EE21S048)
