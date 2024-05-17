@@ -4,34 +4,34 @@ April 20, 2024
 Assignment 3
 
 Team Members:
-● Matcha Naga Gayathri (EE21S048)
-● Ragu B (NS24Z111)
+* Matcha Naga Gayathri (EE21S048)
+* Ragu B (NS24Z111)
 
 ## OPTIONS:
 Implementation Details:
-● Primitive options are special cases of options that last exactly one step.
-● Primitive options are South, North, East, West, Pick, and Drop.
-● The rest of the options defined are multi-step, i.e., temporally extended.
-● Temporally extended options are Opt_R, Opt_G, Opt_Y, Opt_B.
-● These options correspond to [0,1,2,3,4,5,6,7,8,9] respectively.
-● Deterministic policies for the set of temporally extended options (Opt_R, Opt_G,
+* Primitive options are special cases of options that last exactly one step.
+* Primitive options are South, North, East, West, Pick, and Drop.
+* The rest of the options defined are multi-step, i.e., temporally extended.
+* Temporally extended options are Opt_R, Opt_G, Opt_Y, Opt_B.
+* These options correspond to [0,1,2,3,4,5,6,7,8,9] respectively.
+* Deterministic policies for the set of temporally extended options (Opt_R, Opt_G,
 Opt_Y, and Opt_B)
 
 ## SMDP Q-Learning:
-● SMDP (Semi-Markov Decision Process) Q-Learning extends traditional
+* SMDP (Semi-Markov Decision Process) Q-Learning extends traditional
 Q-Learning to handle options, which are temporally extended actions. Options
 allow the agent to select a course of action that may take multiple time steps to
 complete.
-● In SMDP Q-Learning, the Q-values represent the expected return when starting in
+* In SMDP Q-Learning, the Q-values represent the expected return when starting in
 a particular state and taking a specific action or option. Updates to Q-values
 occur after the completion of each action or option, considering the cumulative
 rewards obtained during its execution.
 
 ## Intra-Option Q-Learning:
-● Intra-option Q-Learning focuses on learning within options. Instead of treating
+* Intra-option Q-Learning focuses on learning within options. Instead of treating
 options as atomic actions, it decomposes them into primitive actions and learns
 policies within each option.
-● In Intra-Option Q-Learning, the agent maintains separate Q-values for each
+* In Intra-Option Q-Learning, the agent maintains separate Q-values for each
 primitive action within an option. These Q-values are updated during the
 execution of the option, allowing the agent to learn the value of selecting each
 primitive action within the context of the option. 
